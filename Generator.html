@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de Números</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Números Aleatórios</h1>
+    <div class="input-container">
+      <label for="dezenaInicial">Dezena Inicial:</label>
+      <input type="number" id="dezenaInicial" min="0" max="99" value="0">
+      <label for="dezenaFinal">Dezena Final:</label>
+      <input type="number" id="dezenaFinal" min="0" max="99" value="99">
+      <label for="quantidadeDezenas">Quantidade de Dezenas:</label>
+      <input type="number" id="quantidadeDezenas" min="1" max="100" value="50">
+    </div>
+    <div class="button-container">
+      <button id="gerarNumeros">Gerar Números</button>
+      <button id="ordenarNumeros">Ordenar Números</button>
+    </div>
+    <p>Total de números gerados: <span id="contador">0</span></p>
+    <div class="numeros-container" id="numerosGerados"></div>
+    <ul id="historicoNumeros"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
