@@ -53,3 +53,7 @@ document.getElementById("ordenarNumeros").addEventListener("click", function() {
 
   exibirNumerosGerados();
 });
+function callPage() {
+  // Redirecionar para a página desejada
+  window.location.href = "pagina-alvo.html";
+}
